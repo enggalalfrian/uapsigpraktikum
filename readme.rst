@@ -8,9 +8,9 @@ Perhatian
 
 Kelompok :
 
-Enggal Alfrian
-Salsabilla Qurrota A'yuni
-Tasya Nursita Dewi
+- Enggal Alfrian
+- Salsabilla Qurrota A'yuni
+- Tasya Nursita Dewi
 
 
 ###################
