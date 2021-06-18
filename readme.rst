@@ -1,3 +1,10 @@
+###Perhatian###
+- perhatian :
+- ketika menjalankan, perhatikan pada bagian application kemudian config, base url harus sama seperti folder dihtdocs, supaya adminlte berjalan sebagaimana mestinya
+
+
+
+
 ###################
 What is CodeIgniter
 ###################
