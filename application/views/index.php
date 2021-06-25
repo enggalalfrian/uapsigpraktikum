@@ -21,7 +21,7 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <div id="mapid" style="width: 800px; height: 400px;"></div>
+        <div id="mapid" style="width: 600px; height: 400px; margin-left:300px;"></div>
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
     </section>

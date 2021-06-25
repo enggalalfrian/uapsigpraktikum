@@ -51,7 +51,7 @@
 
 <script>
 
-	var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+	var mymap = L.map('mapid').setView([-5.071794, 105.018997], 8);
 
 	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 		maxZoom: 18,
@@ -62,14 +62,16 @@
 		zoomOffset: -1
 	}).addTo(mymap);
 
-	L.marker([51.5, -0.09]).addTo(mymap);
+	<?php foreach ($data as $a) : ?>
+		var marker = L.marker([<?= $a['cord']; ?>]).addTo(mymap);
+		marker.bindPopup("<?= $a['nama']; ?>").openPopup();
+	<?php endforeach; ?>
 
-	L.circle([51.508, -0.11], {
-		color: 'red',
+	L.circle([51.508, -0.11], 500, {
+		color: 'green',
 		fillColor: '#f03',
-		fillOpacity: 0.5,
-		radius: 500
-	}).addTo(mymap);
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("I am a circle.");
 
 	L.polygon([
 		[51.509, -0.08],
